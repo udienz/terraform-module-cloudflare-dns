@@ -31,5 +31,5 @@ jobs:
       - name: Code formatted
         id: fmt
         run: |
-          terraform fmt -check
-        continue-on-error: true
+          terraform fmt -check -diff -recursive
+        continue-on-error: false
